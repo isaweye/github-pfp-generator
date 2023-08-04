@@ -2,12 +2,12 @@ const { createCanvas } = require('canvas');
 
 class Generator {
     constructor() {
-        this.img = createCanvas(540, 540);
+        this.img = createCanvas(560, 560);
         this.ctx = this.img.getContext('2d');
         this.ctx.fillStyle = 'white';
-        this.ctx.fillRect(0, 0, 540, 540);
-        this.ox = 270 - 2.5 * 80.5;
-        this.oy = 270 - 2.5 * 80.5;
+        this.ctx.fillRect(0, 0, 560, 560);
+        this.ox = 280 - 2.5 * 80.5;
+        this.oy = 280 - 2.5 * 80.5;
     }
 
     fillRect(x, y, width, height, color) {
